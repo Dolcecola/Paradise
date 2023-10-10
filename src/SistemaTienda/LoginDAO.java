@@ -11,21 +11,22 @@ public class LoginDAO {
     ResultSet rs;
     Conexion cn = new Conexion();
 
-    public Login log(String nombre, String pass){
+    public Login log(String nombre, String pass) {
         Login l = new Login();
-        String sql = "SELECT * FROM login WHERE nombre = ? AND pass = ?";
+        String sql = "SELECT * FROM login WHERE usuario = ? AND password = ?";
 
-        try{
+        try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
-            ps.setString(1,nombre);
-            ps.setString(2,pass);
+            ps.setString(1, nombre);
+            ps.setString(2, pass);
+
             rs = ps.executeQuery();
-            if(rs.next()){
-                l.setN(rs.getString("nombre"));
-                l.setP(rs.getString("pass"));
+            if (rs.next()) {
+                l.setNombre(rs.getString("nombre"));
+                l.setPass(rs.getString("password"));
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println(e.toString());
         }
         return l;
