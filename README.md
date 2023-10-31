@@ -14,17 +14,36 @@ Cuenta <|--Carrito
 Cuenta <|--Pago
 
 class TiendaInicio{
-	-Usuario: String
-	-Password: String
+	-Usuario: JTextField
+	-Password: JTextField
+	-ventanaCuenta: JFrame
+	-crear: JButton
+	-inicioS: JButton
+	-ventana: JFrame
+	-imagenFondo: JLabel
+	-mainPanel: JPanel
 	+InitComponents()
 	+crearCuenta()
 }
 
 class CreacionCuenta{
-	-Nombre: String
-	-Apellidos: String
-	-Email: String
-	-Telefono: int
+	-ventanaCuenta: JFrame
+	-guardar: JButton
+	-panelSesion: JPanel
+	-usuario: JLabel
+	-password: JLabel
+	-nombre: JLabel
+	-apellidos: JLabel
+	-email_usuario: JLabel
+	-telefono_usuario: JLabel
+	-nombreUsuarioCrear: JTextField
+	-password2: JTextField
+	-nombrePersona: JTextField
+	-apellidosUsuario: JTextField
+	-email: JTextField
+	-telefono: JTextField
+	-fondoCuenta: JLabel
+
 	+VentanaCreacionCuenta()
 	+CrearUsuario()
 }
@@ -36,7 +55,15 @@ class Admin{
 }
 
 class TiendaMain{
-	-Buscador: String
+	-ventanaTienda: JFrame
+	-mainTienda: JPanel
+	-imagenC1: JLabel
+	-fondoMain: JLabel
+	-bannerMain: JLabel
+	-imagenP2: JLabel
+	-imagenP3: JLabel
+	-bannerDown: JLabel
+
 	+Tienda()
 	+Productos_oferta()
 	+Favoritos()
