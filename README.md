@@ -2,7 +2,7 @@
 
 ```mermaid
 classDiagram
-TiendaInicio <|--CrearCuenta
+TiendaInicio <|--CreacionCuenta
 TiendaInicio <|--TiendaMain
 TiendaInicio <|--Admin
 
