@@ -16,16 +16,17 @@ Cuenta <|--Pago
 class TiendaInicio{
 	-Usuario: String
 	-Password: String
-	+OlvidarContrasenia()
-	+ValidarUsuario()
+	+InitComponents()
+	+crearCuenta()
 }
 
-class CrearCuenta{
+class CreacionCuenta{
 	-Nombre: String
 	-Apellidos: String
 	-Email: String
 	-Telefono: int
-	+Validar_cuenta()
+	+VentanaCreacionCuenta()
+	+CrearUsuario()
 }
 
 class Admin{
@@ -36,6 +37,7 @@ class Admin{
 
 class TiendaMain{
 	-Buscador: String
+	+Tienda()
 	+Productos_oferta()
 	+Favoritos()
 	+Buscador()
