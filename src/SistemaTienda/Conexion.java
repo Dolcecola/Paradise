@@ -13,7 +13,7 @@ public class Conexion {
             con = DriverManager.getConnection(BD, "root", "");
             return con;
         } catch (SQLException e) {
-            System.out.println("ERROR");
+            System.out.println(e.getMessage());
         }
         return null;
     }

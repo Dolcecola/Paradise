@@ -5,12 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CreacionCuenta{
-
-    Login l2 = new Login();
-    CrearCuenta c = new CrearCuenta();
-
-    //--------------------------------
+public class TiendaCuenta{
 
     private JFrame ventanaCuenta;
     private JButton guardar;
@@ -29,7 +24,7 @@ public class CreacionCuenta{
     private JTextField telefono;
     private JLabel fondoCuenta;
 
-    public CreacionCuenta(){
+    public TiendaCuenta(){
         VentanaCreacionCuenta();
     }
 
@@ -130,32 +125,15 @@ public class CreacionCuenta{
     ActionListener guardarCuenta = new ActionListener() {//evento para guardar usuario en BD
         public void actionPerformed(ActionEvent g) {
             try {
-                crearUsuario();
+                Cliente c = new Cliente();
+                if(c.crearUsuario(nombreUsuarioCrear, password2, nombrePersona, apellidosUsuario, email, telefono)){
+                    ventanaCuenta.dispose();
+                    TiendaInicio x = new TiendaInicio();
+                }
             }
             catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null,"Debe introducir datos válidos");
             }
         }
     };
-
-    public void crearUsuario() {
-        if (nombreUsuarioCrear.getText().isEmpty() || password2.getText().isEmpty() || nombrePersona.getText().isEmpty() || apellidosUsuario.getText().isEmpty() || email.getText().isEmpty() || telefono.getText().isEmpty()) {
-
-            JOptionPane.showMessageDialog(null, "Campos vacios");
-
-        } else {
-
-            l2.setUsuario(nombreUsuarioCrear.getText());
-            l2.setPass(password2.getText());
-            l2.setNombre(nombrePersona.getText());
-            l2.setApellidos(apellidosUsuario.getText());
-            l2.setEmail(email.getText());
-            l2.setTelefono(Integer.parseInt(telefono.getText()));
-
-            c.RegistrarUsuario(l2);
-            JOptionPane.showMessageDialog(null, "Cliente Registrado");
-            ventanaCuenta.dispose();
-            TiendaInicio x = new TiendaInicio();
-        }
-    }
 }

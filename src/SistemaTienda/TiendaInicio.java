@@ -6,29 +6,23 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TiendaInicio {
-
-    Login lg = new Login();
-    LoginDAO login = new LoginDAO();
-
-    //-------------------------------
-
     private JPanel mainPanel;
     private JLabel imagenFondo;
     private JFrame ventana;
     private JButton inicioS;
     private JButton crear;
-    private JFrame ventanaCuenta;
     private JTextField usuario;
     private JTextField password;
 
     public TiendaInicio(){
-        InitComponents();//funcion que invoca la primera ventana junto con todos sus componentes(botones, cajas de texto, imagenes...)
+        InitComponents();
     }
 
     public void InitComponents(){
-        ventana = new JFrame("Paradise");
+        ventana = new JFrame("Nombre");
         mainPanel = new JPanel();
         imagenFondo = new JLabel();
+        Color f = new Color(219, 216, 227);
 
         crear = new JButton();
         crear.setText("crear cuenta");
@@ -67,7 +61,6 @@ public class TiendaInicio {
         login.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
         //Color f = new Color(235, 236, 218);
-        Color f = new Color(219, 216, 227);
 
         mainPanel.setLayout(null);
         mainPanel.setBackground(f);
@@ -91,61 +84,31 @@ public class TiendaInicio {
         ventana.setLocationRelativeTo(null);
         ventana.setResizable(false);
 
-        //nombreUsuario = usuario.getText();
-        //passUsuario = password.getText();
-
         crear.addActionListener(CrearCuenta);
         inicioS.addActionListener(acceder);
 
         ventana.add(mainPanel);
+
     }
 
     ActionListener acceder = new ActionListener() {
-
         public void actionPerformed(ActionEvent e) {
-            validar();
+
+            Cliente c = new Cliente();
+
+            if(c.validar(usuario,password)){
+
+                ventana.dispose();
+                TiendaMain x = new TiendaMain(false);
+            }
         }
     };
 
     ActionListener CrearCuenta = new ActionListener() {
         public void actionPerformed(ActionEvent f) {
-            crearcuenta();
+
+            ventana.dispose();
+            TiendaCuenta x = new TiendaCuenta();
         }
     };
-
-    public void validar() {
-
-        String nombreUsuario = usuario.getText();
-        String passUsuario = password.getText();
-
-        if (usuario.getText().isEmpty() || password.getText().isEmpty()) {
-
-            JOptionPane.showMessageDialog(null, "Introduzca su usuario y contraseña");
-            usuario.requestFocus();
-
-        } else {
-
-            lg = login.log(nombreUsuario, passUsuario);
-
-            if (lg.getNombre() != null && lg.getPass() != null) {
-
-                ventana.dispose();
-                TiendaMain x = new TiendaMain(); //funcion que lleva a la pagina "main" con todos los productos
-                x.tienda();
-
-            } else {
-
-                JOptionPane.showMessageDialog(null, "Usuario no encontrado");
-                usuario.requestFocus();
-            }
-        }
-    }
-
-    public void crearcuenta() {
-
-        ventana.dispose();
-        CreacionCuenta x = new CreacionCuenta();
-
-    }
-
 }
