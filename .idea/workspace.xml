@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24cc9158-e90f-47c7-be21-d36520c435d7" name="Changes" comment="update principal">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CamisetaHombre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paradise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Paradise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bannerTienda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fondo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fondoTienda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoTienda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prenda1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prenda2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prenda3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dolcecola"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="942638fd-329c-46fb-8f24-d9dac892e104" />
+        <option name="url" value="https://github.com/Dolcecola/Paradise.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2WAJf8FXxIxWAl8ZXZYuLmZSuGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "C:/Programación Avanzada/Paradise/src/libs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programación Avanzada\Paradise\src\libs" />
+      <recent name="C:\Programación Avanzada\Paradise\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programación Avanzada\Paradise\src" />
+      <recent name="C:\Programación Avanzada\Paradise" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SistemaTienda.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="SistemaTienda.Main" />
+      <module name="Paradise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SistemaTienda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SistemaTienda.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24cc9158-e90f-47c7-be21-d36520c435d7" name="Changes" comment="" />
+      <created>1696169554479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696169554479</updated>
+      <workItem from="1696169555481" duration="2017000" />
+      <workItem from="1696255181707" duration="3550000" />
+      <workItem from="1696505133958" duration="1492000" />
+      <workItem from="1696692196356" duration="10723000" />
+      <workItem from="1696783309969" duration="7936000" />
+      <workItem from="1696842727314" duration="4063000" />
+      <workItem from="1696858941166" duration="2515000" />
+      <workItem from="1696861604286" duration="5409000" />
+      <workItem from="1696951820017" duration="812000" />
+      <workItem from="1696953408928" duration="2238000" />
+      <workItem from="1697031361924" duration="2697000" />
+      <workItem from="1697034389665" duration="1535000" />
+      <workItem from="1697045945129" duration="171000" />
+      <workItem from="1697109625213" duration="209000" />
+      <workItem from="1697110203812" duration="1339000" />
+      <workItem from="1697121150147" duration="45000" />
+      <workItem from="1697184327418" duration="38000" />
+      <workItem from="1697215504868" duration="4671000" />
+      <workItem from="1697301525576" duration="385000" />
+      <workItem from="1697464682082" duration="110000" />
+      <workItem from="1698070361520" duration="612000" />
+      <workItem from="1698255351935" duration="676000" />
+      <workItem from="1698595150971" duration="3810000" />
+      <workItem from="1698660376511" duration="738000" />
+      <workItem from="1698744412837" duration="4921000" />
+      <workItem from="1698762683291" duration="7712000" />
+      <workItem from="1698932415639" duration="416000" />
+      <workItem from="1698934162585" duration="898000" />
+      <workItem from="1699091726530" duration="1662000" />
+      <workItem from="1699264849690" duration="178000" />
+      <workItem from="1699436274820" duration="3927000" />
+      <workItem from="1699523627863" duration="4799000" />
+      <workItem from="1699542009673" duration="8324000" />
+      <workItem from="1699608818685" duration="3006000" />
+      <workItem from="1699629109968" duration="12662000" />
+      <workItem from="1699691370291" duration="10862000" />
+      <workItem from="1699713389508" duration="9575000" />
+      <workItem from="1699785631528" duration="7803000" />
+      <workItem from="1699800251432" duration="14870000" />
+      <workItem from="1699886105453" duration="1623000" />
+      <workItem from="1699889730971" duration="5576000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1696170634082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696170634082</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Verifica si existe usuario en BD">
+      <option name="closed" value="true" />
+      <created>1696784435037</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696784435037</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README">
+      <option name="closed" value="true" />
+      <created>1696866978549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696866978550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="README">
+      <option name="closed" value="true" />
+      <created>1696867034846</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696867034846</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Tienda update 2">
+      <option name="closed" value="true" />
+      <created>1696954524779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696954524779</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tienda update 3">
+      <option name="closed" value="true" />
+      <created>1697219606920</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697219606920</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tienda update 4">
+      <option name="closed" value="true" />
+      <created>1698770066831</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698770066831</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Tienda update fotos">
+      <option name="closed" value="true" />
+      <created>1698770699827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698770699827</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update principal">
+      <option name="closed" value="true" />
+      <created>1699893993333</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699893993333</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update principal">
+      <option name="closed" value="true" />
+      <created>1699894000006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699894000006</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Verifica si existe usuario en BD" />
+    <MESSAGE value="README" />
+    <MESSAGE value="Tienda update 2" />
+    <MESSAGE value="Tienda update 3" />
+    <MESSAGE value="Tienda update 4" />
+    <MESSAGE value="Tienda update fotos" />
+    <MESSAGE value="update principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="update principal" />
+  </component>
+</project>

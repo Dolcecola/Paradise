@@ -1,6 +1,7 @@
 package SistemaTienda;
 
 import javax.swing.*;
+import javax.xml.catalog.Catalog;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
