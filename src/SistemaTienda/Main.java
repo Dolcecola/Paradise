@@ -6,9 +6,6 @@ public class Main{
 
     public static void main(String[] args) {
 
-        TiendaInicio x = new TiendaInicio();
-
-        //Connection bd = ConectarBD(); comprobar conexion con base de datos
+        Inicio x = new Inicio();
     }
-
 }

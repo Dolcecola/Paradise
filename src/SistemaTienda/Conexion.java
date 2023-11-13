@@ -9,11 +9,11 @@ public class Conexion {
 
     public Connection getConnection() {
         try {
-            String BD = "jdbc:mysql://localhost:3306/sistema?serverTimezone=UTC";
+            String BD = "jdbc:mysql://localhost:3306/abc?serverTimezone=UTC";
             con = DriverManager.getConnection(BD, "root", "");
             return con;
         } catch (SQLException e) {
-            System.out.println("ERROR");
+            System.out.println(e.getMessage());
         }
         return null;
     }
