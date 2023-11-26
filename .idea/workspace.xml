@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca4dd024-d02c-4f12-9797-8a4f455c787a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/LeerEscribirBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/LeerEscribirBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Ropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Ropa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaCuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaCuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicioAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicioAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Usuario.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Y8F71e9hwb0O8clCD72uRpqjV5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Programación Avanzada/Paradise&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SistemaTienda.Main" />
@@ -19,5 +78,42 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca4dd024-d02c-4f12-9797-8a4f455c787a" name="Changes" comment="" />
+      <created>1699899128744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699899128744</updated>
+      <workItem from="1699899129757" duration="427000" />
+      <workItem from="1699899930852" duration="203000" />
+      <workItem from="1700041215318" duration="1449000" />
+      <workItem from="1700062735371" duration="10483000" />
+      <workItem from="1700139966466" duration="52000" />
+      <workItem from="1700140105567" duration="4413000" />
+      <workItem from="1700222390169" duration="194000" />
+      <workItem from="1700222597241" duration="3202000" />
+      <workItem from="1700231041400" duration="12220000" />
+      <workItem from="1700300482155" duration="7364000" />
+      <workItem from="1700319710733" duration="10858000" />
+      <workItem from="1700476369907" duration="4629000" />
+      <workItem from="1700481066816" duration="1967000" />
+      <workItem from="1700493372874" duration="178000" />
+      <workItem from="1700493563895" duration="1094000" />
+      <workItem from="1700494690190" duration="14834000" />
+      <workItem from="1700577276185" duration="4081000" />
+      <workItem from="1700582194319" duration="1144000" />
+      <workItem from="1700681019961" duration="897000" />
+      <workItem from="1700742482052" duration="1691000" />
+      <workItem from="1700900497746" duration="5047000" />
+      <workItem from="1700934614360" duration="4465000" />
+      <workItem from="1701009156469" duration="4112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

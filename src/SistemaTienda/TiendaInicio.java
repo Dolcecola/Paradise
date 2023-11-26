@@ -1,16 +1,23 @@
 package SistemaTienda;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.List;
+
+/**
+ * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de usuario ya existentes o bien crear un nuevo usuario
+ */
 
 public class TiendaInicio {
-    private JPanel mainPanel;
-    private JLabel imagenFondo;
     private JFrame ventana;
-    private JButton inicioS;
-    private JButton crear;
     private JTextField usuario;
     private JTextField password;
 
@@ -18,19 +25,23 @@ public class TiendaInicio {
         InitComponents();
     }
 
-    public void InitComponents(){
-        ventana = new JFrame("Nombre");
-        mainPanel = new JPanel();
-        imagenFondo = new JLabel();
-        Color f = new Color(219, 216, 227);
+    /**
+     * Método que crea toda la interfaz de esta ventana, establece los botones en su lugar, las imágenes, etc.
+     */
 
-        crear = new JButton();
+    public void InitComponents(){
+        ventana = new JFrame("Starshop");
+        JPanel mainPanel = new JPanel();
+        JLabel imagenFondo = new JLabel();
+        Color f = new Color(236, 236, 218);
+
+        JButton crear = new JButton();
         crear.setText("crear cuenta");
         crear.setBounds(558, 255, 120, 30);
         crear.setHorizontalAlignment(SwingConstants.CENTER);
         crear.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 
-        inicioS = new JButton();
+        JButton inicioS = new JButton();
         inicioS.setText("acceder");
         inicioS.setBounds(430, 255, 90, 30);
         inicioS.setHorizontalAlignment(SwingConstants.CENTER);
@@ -60,8 +71,6 @@ public class TiendaInicio {
         login.setHorizontalAlignment(SwingConstants.CENTER);
         login.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        //Color f = new Color(235, 236, 218);
-
         mainPanel.setLayout(null);
         mainPanel.setBackground(f);
 
@@ -77,6 +86,32 @@ public class TiendaInicio {
         mainPanel.add(usuario);
         mainPanel.add(login);
         mainPanel.add(imagenFondo);
+
+        LeerEscribirBD x = new LeerEscribirBD();
+        List<Blob> blob = x.leerFondos();
+
+        try{
+            byte[] aux = blob.get(5).getBytes(1,(int) blob.get(5).length());
+
+            BufferedImage img;
+
+            try{
+                img = ImageIO.read(new ByteArrayInputStream(aux));
+
+                ImageIcon im = new ImageIcon(img);
+                JLabel etiquetaImagen = new JLabel();
+                etiquetaImagen.setBounds(10, 60, 300, 300);
+                etiquetaImagen.setIcon(new ImageIcon(im.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH)));
+
+                mainPanel.add(etiquetaImagen, JLayeredPane.DEFAULT_LAYER);
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
 
         ventana.setSize(800, 500);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -99,7 +134,7 @@ public class TiendaInicio {
             if(c.validar(usuario,password)){
 
                 ventana.dispose();
-                TiendaMain x = new TiendaMain(false);
+                new TiendaMain(false);
             }
         }
     };
@@ -108,7 +143,7 @@ public class TiendaInicio {
         public void actionPerformed(ActionEvent f) {
 
             ventana.dispose();
-            TiendaCuenta x = new TiendaCuenta();
+            new TiendaCuenta();
         }
     };
 }

@@ -1,15 +1,23 @@
 package SistemaTienda;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.List;
+
+/**
+ * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de administrador ya existentes en la base de datos
+ */
 
 public class TiendaInicioAdmin {
-    private JPanel mainPanel;
-    private JLabel imagenFondo;
     private JFrame ventana;
-    private JButton inicioS;
     private JTextField usuario;
     private JTextField password;
 
@@ -17,15 +25,19 @@ public class TiendaInicioAdmin {
         InitComponents();
     }
 
-    public void InitComponents(){
-        ventana = new JFrame("Nombre");
-        mainPanel = new JPanel();
-        imagenFondo = new JLabel();
-        Color f = new Color(219, 216, 227);
+    /**
+     * Método que crea toda la interfaz de esta ventana, establece los botones en su lugar, las imágenes, etc.
+     */
 
-        inicioS = new JButton();
+    public void InitComponents(){
+        ventana = new JFrame("Starshop");
+        JPanel mainPanel = new JPanel();
+        JLabel imagenFondo = new JLabel();
+        Color f = new Color(236, 236, 218);
+
+        JButton inicioS = new JButton();
         inicioS.setText("acceder");
-        inicioS.setBounds(430, 255, 90, 30);
+        inicioS.setBounds(430, 255, 250, 30);
         inicioS.setHorizontalAlignment(SwingConstants.CENTER);
         inicioS.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 
@@ -35,7 +47,7 @@ public class TiendaInicioAdmin {
         nombre.setHorizontalAlignment(SwingConstants.CENTER);
         nombre.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        password = new JTextField();
+        password = new JTextField("paradise");
         password.setBounds(430, 200, 250, 28);
 
         JLabel cont = new JLabel();
@@ -44,11 +56,11 @@ public class TiendaInicioAdmin {
         cont.setHorizontalAlignment(SwingConstants.CENTER);
         cont.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        usuario = new JTextField();
+        usuario = new JTextField("alex");
         usuario.setBounds(430, 155, 250, 28);
 
         JLabel login = new JLabel();
-        login.setText("Iniciar Sesión");
+        login.setText("¡Bienvenido!");
         login.setBounds(450, 10, 200, 200);
         login.setHorizontalAlignment(SwingConstants.CENTER);
         login.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -70,6 +82,32 @@ public class TiendaInicioAdmin {
         mainPanel.add(login);
         mainPanel.add(imagenFondo);
 
+        LeerEscribirBD x = new LeerEscribirBD();
+        List<Blob> blob = x.leerFondos();
+
+        try{
+            byte[] aux = blob.get(5).getBytes(1,(int) blob.get(5).length());
+
+            BufferedImage img;
+
+            try{
+                img = ImageIO.read(new ByteArrayInputStream(aux));
+
+                ImageIcon im = new ImageIcon(img);
+                JLabel miLogo = new JLabel();
+                miLogo.setBounds(10, 60, 300, 300);
+                miLogo.setIcon(new ImageIcon(im.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH)));
+
+                mainPanel.add(miLogo, JLayeredPane.DEFAULT_LAYER);
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+
         ventana.setSize(800, 500);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setVisible(true);
@@ -89,7 +127,7 @@ public class TiendaInicioAdmin {
             if(a.validar(usuario,password)){
 
                 ventana.dispose();
-                TiendaMain x = new TiendaMain(true);
+                new TiendaMain(true);
             }
         }
     };

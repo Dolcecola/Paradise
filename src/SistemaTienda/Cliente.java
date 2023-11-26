@@ -2,6 +2,10 @@ package SistemaTienda;
 
 import javax.swing.*;
 
+/**
+ * Clase que sirve para crear los atributos de un usuario para posteriormente enviar esa información a la base de datos
+ */
+
 public class Cliente extends Usuario{
     String nombre;
     String pass;
@@ -10,17 +14,7 @@ public class Cliente extends Usuario{
     String email;
     int telefono = 0;
 
-    public Cliente() {
-    }
-
-    public Cliente(String n, String p, String u, String a, String e, int t) {
-        this.nombre = n;
-        this.pass = p;
-        this.usuario = u;
-        this.apellidos = a;
-        this.email = e;
-        this.telefono = t;
-    }
+    public Cliente() {}
 
     public void setUsuario(String u) {
         usuario = u;
@@ -70,6 +64,13 @@ public class Cliente extends Usuario{
         return pass;
     }
 
+    /**
+     * Método que consiste en comprobar si los datos introducidos por el usuario son correctos y los envía a la base de datos
+     * para comprobar si son correctos o no
+     * @param nU caja de texto con el nombre del usuario
+     * @param pU caja de texto con la contraseña del usuario
+     * @return devuelve true si esos datos existen en la base de datos o false si no existen
+     */
 
     @Override
     public boolean validar(JTextField nU, JTextField pU) {
@@ -85,7 +86,7 @@ public class Cliente extends Usuario{
 
         } else {
 
-            Cliente lg = new Cliente();
+            Cliente lg;
             LeerEscribirBD le = new LeerEscribirBD();
 
             lg = le.log(nombreUsuario, passUsuario);
@@ -102,6 +103,17 @@ public class Cliente extends Usuario{
             }
         }
     }
+
+    /**
+     * Método que se encarga de comprobar si los datos escritos en las cajas de texto son correctos y los envía a la base de datos
+     * @param usuario caja de texto con el nombre de usuario del cliente
+     * @param password caja de texto con la contraseña del cliente
+     * @param nombre caja de texto con el nombre del cliente
+     * @param apellidos caja de texto con los apellidos del cliente a del cliente
+     * @param email caja de texto con el email del cliente
+     * @param telefono caja de texto con el teléfono del cliente
+     * @return devuelve true si el usuario si ha creado correctamente en la base de datos o falso si algo no ha salido como se esperaba
+     */
 
     public boolean crearUsuario(JTextField usuario, JTextField password, JTextField nombre, JTextField apellidos, JTextField email, JTextField telefono) {
 

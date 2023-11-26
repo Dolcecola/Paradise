@@ -1,28 +1,26 @@
 package SistemaTienda;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+import java.util.List;
 
 public class TiendaCuenta{
 
     private JFrame ventanaCuenta;
-    private JButton guardar;
-    private JPanel panelSesion;
-    private JLabel usuario;
-    private JLabel password;
-    private JLabel nombre;
-    private JLabel apellidos;
-    private JLabel email_usuario;
-    private JLabel telefono_usuario;
     private JTextField nombreUsuarioCrear;
     private JTextField password2;
     private JTextField nombrePersona;
     private JTextField apellidosUsuario;
     private JTextField email;
     private JTextField telefono;
-    private JLabel fondoCuenta;
 
     public TiendaCuenta(){
         VentanaCreacionCuenta();
@@ -31,16 +29,16 @@ public class TiendaCuenta{
     public void VentanaCreacionCuenta(){
 
         ventanaCuenta = new JFrame();
-        panelSesion = new JPanel();
+        JPanel panelSesion = new JPanel();
         nombreUsuarioCrear = new JTextField();
         apellidosUsuario = new JTextField();
         email = new JTextField();
         telefono = new JTextField();
         nombrePersona = new JTextField();
         password2 = new JTextField();
-        fondoCuenta = new JLabel();
+        JLabel fondoCuenta = new JLabel();
 
-        guardar = new JButton();
+        JButton guardar = new JButton();
 
         panelSesion.setBackground(Color.WHITE);
         panelSesion.setLayout(null);
@@ -55,37 +53,37 @@ public class TiendaCuenta{
         guardar.setText("Guardar");
         guardar.setBounds(310, 370, 90, 30);
 
-        usuario = new JLabel();
+        JLabel usuario = new JLabel();
         usuario.setText("Usuario");
         usuario.setBounds(114, 50, 150, 30);
         usuario.setHorizontalAlignment(SwingConstants.CENTER);
         usuario.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        password = new JLabel();
+        JLabel password = new JLabel();
         password.setText("Contraseña");
         password.setBounds(100, 100, 150, 30);
         password.setHorizontalAlignment(SwingConstants.CENTER);
         password.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        nombre = new JLabel();
+        JLabel nombre = new JLabel();
         nombre.setText("Nombre");
         nombre.setBounds(114, 150, 150, 30);
         nombre.setHorizontalAlignment(SwingConstants.CENTER);
         nombre.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        apellidos = new JLabel();
+        JLabel apellidos = new JLabel();
         apellidos.setText("Apellidos");
         apellidos.setBounds(110, 200, 150, 30);
         apellidos.setHorizontalAlignment(SwingConstants.CENTER);
         apellidos.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        email_usuario = new JLabel();
+        JLabel email_usuario = new JLabel();
         email_usuario.setText("Email");
         email_usuario.setBounds(125, 250, 150, 30);
         email_usuario.setHorizontalAlignment(SwingConstants.CENTER);
         email_usuario.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 
-        telefono_usuario = new JLabel();
+        JLabel telefono_usuario = new JLabel();
         telefono_usuario.setText("Telefono");
         telefono_usuario.setBounds(115, 300, 150, 30);
         telefono_usuario.setHorizontalAlignment(SwingConstants.CENTER);
@@ -110,6 +108,32 @@ public class TiendaCuenta{
         panelSesion.add(telefono_usuario);
         panelSesion.add(fondoCuenta);
 
+        LeerEscribirBD x = new LeerEscribirBD();
+        List<Blob> blob = x.leerFondos();
+
+        try{
+            byte[] aux = blob.get(4).getBytes(1,(int) blob.get(4).length());
+
+            BufferedImage img;
+
+            try{
+                img = ImageIO.read(new ByteArrayInputStream(aux));
+
+                ImageIcon im = new ImageIcon(img);
+                JLabel etiquetaImagen = new JLabel();
+                etiquetaImagen.setBounds(0, 0, 500, 500);
+                etiquetaImagen.setIcon(new ImageIcon(im.getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH)));
+
+                panelSesion.add(etiquetaImagen, JLayeredPane.DEFAULT_LAYER);
+
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+
         ventanaCuenta.setSize(500, 500);
         ventanaCuenta.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventanaCuenta.setLocationRelativeTo(null);
@@ -128,7 +152,7 @@ public class TiendaCuenta{
                 Cliente c = new Cliente();
                 if(c.crearUsuario(nombreUsuarioCrear, password2, nombrePersona, apellidosUsuario, email, telefono)){
                     ventanaCuenta.dispose();
-                    TiendaInicio x = new TiendaInicio();
+                    new TiendaInicio();
                 }
             }
             catch (NumberFormatException e) {
