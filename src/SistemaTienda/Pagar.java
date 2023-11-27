@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  * Clase diseñada para mostrar la ventana final donde se recogen los datos del cliente para proceder al pago del producto y actualizar los datos de la base de datos
+ * y que corresponde a la parte de "Vista" de nuestro MVC
  */
 
 public class Pagar extends JFrame implements Interfaz{

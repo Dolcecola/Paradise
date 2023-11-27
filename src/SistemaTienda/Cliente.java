@@ -3,18 +3,19 @@ package SistemaTienda;
 import javax.swing.*;
 
 /**
- * Clase que sirve para crear los atributos de un usuario para posteriormente enviar esa información a la base de datos
+ * Clase que sirve para crear los atributos de un usuario para posteriormente enviar esa información a la base de datos.
+ * Y corresponde con la parte de "Controlador" de nuestro MVC
  */
 
 public class Cliente extends Usuario{
-    String nombre;
-    String pass;
-    String usuario;
-    String apellidos;
-    String email;
-    int telefono = 0;
+    private String nombre;
+    private String pass;
+    private String usuario;
+    private String apellidos;
+    private String email;
+    private int telefono = 0;
 
-    public Cliente() {}
+    public Cliente(){}
 
     public void setUsuario(String u) {
         usuario = u;

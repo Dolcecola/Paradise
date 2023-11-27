@@ -11,14 +11,23 @@ import java.sql.Blob;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Clase donde se muestra la ventana correspondiente al carrito del usuario.
+ * Y corresponde con la parte de "Vista" de nuestro MVC
+ */
+
 public class Carrito extends JFrame {
     private final JLayeredPane panel = new JLayeredPane();
-    int ancho = 150;
-    int alto = 150;
+    private int ancho = 150;
+    private int alto = 150;
 
     public Carrito(){
         InitComponents();
     }
+
+    /**
+     * Método principal que coloca de manera adecuada toda la interfaz del carrito para su correcto funcionamiento
+     */
     public void InitComponents(){
 
         fondo();
@@ -123,6 +132,10 @@ public class Carrito extends JFrame {
 
         add(panel);
     }
+
+    /**
+     * Método que coloca la imagen de fondo de la interfaz del carrito del usuario
+     */
     public void fondo(){
         LeerEscribirBD x = new LeerEscribirBD();
         List<Blob> blob = x.leerFondos();
@@ -150,6 +163,10 @@ public class Carrito extends JFrame {
             System.out.println(ex.getMessage());
         }
     }
+
+    /**
+     * Método que coloca los botones adecuados para esta ventana
+     */
     public void botones(){
         JButton comprar = new JButton("Comprar ahora");
         comprar.setBounds(1030,560,430,50);
@@ -158,6 +175,10 @@ public class Carrito extends JFrame {
 
         panel.add(comprar, JLayeredPane.PALETTE_LAYER);
     }
+
+    /**
+     * Evento que llama a la clase "Pagar" para realizar el pago final del usuario
+     */
 
     ActionListener finalizarCompra = e -> {
         dispose();

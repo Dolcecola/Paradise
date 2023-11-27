@@ -13,7 +13,8 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de usuario ya existentes o bien crear un nuevo usuario
+ * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de usuario ya existentes o bien crear un nuevo usuario.
+ * Y corresponde a la parte de "Vista" de nuestro MVC.
  */
 
 public class TiendaInicio {
@@ -126,6 +127,10 @@ public class TiendaInicio {
 
     }
 
+    /**
+     * Evento que llama a la clase "Cliente" para comprobar los datos introducidos en las cajas de texto
+     */
+
     ActionListener acceder = new ActionListener() {
         public void actionPerformed(ActionEvent e) {
 
@@ -139,6 +144,9 @@ public class TiendaInicio {
         }
     };
 
+    /**
+     * Evento que llama a la clase "TiendaCuenta" para la creación de lac cuenta de un usuario
+     */
     ActionListener CrearCuenta = new ActionListener() {
         public void actionPerformed(ActionEvent f) {
 

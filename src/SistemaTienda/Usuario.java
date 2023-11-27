@@ -3,7 +3,7 @@ package SistemaTienda;
 import javax.swing.*;
 
 /**
- * Clase abstracta empleada para
+ * Clase abstracta empleada para usar su método distintas veces en las clases de "Cliente" y "Admin".
  */
 
 public abstract class Usuario{

@@ -6,7 +6,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * Clase que se encarga únicamente de establecer la conexión entre java y la base de datos MySQL
+ * Clase que se encarga únicamente de establecer la conexión entre java y la base de datos MySQL y que corresponde
+ * a la parte de "Controlador" dentro de nuestro patrón diseño.
  */
 
 public class Conexion{

@@ -12,17 +12,17 @@ import java.util.List;
 
 /**
  * Esta clase genera la ventana principal de la tienda donde se produce la visibilización de las prendas correspondientes, el carrito del usuario
- * y las opciones exclusivas de administrador
+ * y las opciones exclusivas de administrador. Y corresponde a la parte de "Vista" de nuestro MVC
  */
 
 public class TiendaMain extends JFrame {
-    int font = 14;
+    private int font = 14;
     Color c = new Color(236,236,218);
-    int p = 350;
-    int q = 350;
-    int ancho = 150;
-    int alto = 150;
-    int coordY = 255;
+    private int p = 350;
+    private int q = 350;
+    private int ancho = 150;
+    private int alto = 150;
+    private int coordY = 255;
     private JButton cesta;
     private final JLayeredPane mainTienda = new JLayeredPane();
     private FileInputStream fis;

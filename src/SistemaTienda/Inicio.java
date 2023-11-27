@@ -1,15 +1,14 @@
 package SistemaTienda;
 
-/**
- *
- * Inicio se encarga de mostrar la primera ventana que decidirá si estamos entrando como un usuario o un administrador
- *
- */
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+/**
+ *
+ * Inicio se encarga de mostrar la primera ventana que decidirá si estamos entrando como un usuario o un administrador.
+ * Y corresponde con la parte de "Vista" de nuestro MVC
+ */
 
 public class Inicio{
     private JFrame ventana;

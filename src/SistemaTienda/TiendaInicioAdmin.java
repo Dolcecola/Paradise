@@ -13,7 +13,8 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de administrador ya existentes en la base de datos
+ * Esta clase crea la segunda ventana que nos permitirá acceder a la tienda con credenciales de administrador ya existentes en la base de datos.
+ * Y corresponde a la parte de "Vista" de nuestro MVC
  */
 
 public class TiendaInicioAdmin {
@@ -119,6 +120,10 @@ public class TiendaInicioAdmin {
         ventana.add(mainPanel);
 
     }
+
+    /**
+     * Evento que llama a la clase "Admin" para validar el nombre introducido en las cajas de texto
+     */
     ActionListener acceder = new ActionListener() {
         public void actionPerformed(ActionEvent e) {
 

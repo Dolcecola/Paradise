@@ -4,12 +4,13 @@ import javax.swing.*;
 import java.security.PublicKey;
 
 /**
- * Esta clase se encarga de establecer los atributos que tiene un administrador y que sirve de intermediario entre la información recibida en pantalla y la base de datos
+ * Esta clase se encarga de establecer los atributos que tiene un administrador y que sirve de intermediario entre la información recibida en pantalla y la base de datos.
+ * Y corresponde con la parte de "Controlador" de nuestro MVC
  */
 
 public class Admin extends Usuario{
-    String nombre;
-    String pass;
+    private String nombre;
+    private String pass;
 
     public Admin(){}
 

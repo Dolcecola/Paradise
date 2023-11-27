@@ -7,6 +7,7 @@ import java.sql.*;
 
 /**
  * Clase encargada de establecer la conexión con la base de datos para manipular la información recibida o almacenada
+ * Esta clase consistiría en la parte principal de "Controlador" dentro de nuestro patrón de diseño MCV (modelo-vista-controlador)
  */
 public class LeerEscribirBD {
     Connection con;

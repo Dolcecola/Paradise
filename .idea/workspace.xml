@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca4dd024-d02c-4f12-9797-8a4f455c787a" name="Changes" comment="Final Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ca4dd024-d02c-4f12-9797-8a4f455c787a" name="Changes" comment="Javadoc Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FondoTienda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Carrito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Carrito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/LeerEscribirBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/LeerEscribirBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Pagar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Pagar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Ropa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Ropa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaCuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaCuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicioAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaInicioAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/TiendaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaTienda/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaTienda/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +117,8 @@
       <workItem from="1701009156469" duration="5809000" />
       <workItem from="1701017596825" duration="1545000" />
       <workItem from="1701095332194" duration="377000" />
-      <workItem from="1701095728990" duration="351000" />
+      <workItem from="1701095728990" duration="1551000" />
+      <workItem from="1701099874498" duration="2532000" />
     </task>
     <task id="LOCAL-00001" summary="Final Commit">
       <option name="closed" value="true" />
@@ -114,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701013444599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Javadoc Commit">
+      <option name="closed" value="true" />
+      <created>1701096113923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701096113923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
+    <MESSAGE value="Javadoc Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc Commit" />
   </component>
 </project>

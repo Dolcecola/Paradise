@@ -9,18 +9,19 @@ import java.sql.Blob;
  * Esta clase se emplea como intermediario entre las clases que reciben información sobre que quiere hacer el usuario o administrador y enviar esa información
  * a la base de datos ya sea para escribir, leer o actualizar datos de nuestra base de datos siempre que esa información esté relacionada con la ropa.
  * En esta clase también se gestiona si dicha información es correcta o incorrecta para ser gestionada por la base de datos.
+ * Y corresponde a la parte de "Controlador" de nuestro MVC
  */
 
 public class Ropa{
 
-    FileInputStream f_imagen;
-    Blob image;
-    String genero;
-    String tipo_prenda;
-    String precio;
-    String nombre_prenda;
-    String descripcion;
-    String stock;
+    private FileInputStream f_imagen;
+    private Blob image;
+    private String genero;
+    private String tipo_prenda;
+    private String precio;
+    private String nombre_prenda;
+    private String descripcion;
+    private String stock;
 
     Ropa(){}
 

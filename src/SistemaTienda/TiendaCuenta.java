@@ -12,6 +12,11 @@ import java.sql.Blob;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Esta clase se encarga de crear la ventana para crear una cuenta de usuario con sus respectivos botones, cajas de texto...
+ * y que corresponde la parte de "Vista" de nuestro patrón de diseño MVC
+ */
+
 public class TiendaCuenta{
 
     private JFrame ventanaCuenta;
@@ -146,7 +151,7 @@ public class TiendaCuenta{
         ventanaCuenta.add(panelSesion);
     }
 
-    ActionListener guardarCuenta = new ActionListener() {//evento para guardar usuario en BD
+    ActionListener guardarCuenta = new ActionListener() {
         public void actionPerformed(ActionEvent g) {
             try {
                 Cliente c = new Cliente();
